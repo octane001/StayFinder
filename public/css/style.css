@@ -1,0 +1,139 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+.container {
+  flex: 1;
+}
+
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+.nav-link {
+  color: #222222 !important;
+}
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-socials i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  color: #222222;
+}
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+.f-info {
+  text-align: center;
+  display: flex;
+  height: 8rem;
+  background-color: #ebebeb;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items:space; */
+}
+
+#color-hover {
+  color: black;
+}
+#color-hover:hover {
+  color: rgb(0, 102, 255);
+}
+
+/* Cards */
+.card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text {
+  font-weight: 400 !important;
+}
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+
+.zoom-out {
+  transition: transform 0.2s ease !important;
+}
+.zoom-out:hover {
+  transform: scale(1.05) !important;
+}
+.card-text {
+  margin-top: 10px !important;
+  margin-left: 15px !important;
+}
+
+/* Show Page */
+
+.show-img {
+  height: 30vh;
+}
+.show-card {
+  padding: 0;
+}
+.show-title {
+  font-weight: 600 !important;
+}
+
+.profile-pic img {
+  /* background-color: #fe424d; */
+  border-radius: 2rem;
+}
+.profile-pic img:hover {
+  border: 2px solid #fe424d !important;
+}
+
+.review-pic {
+  /* background-color: #fe424d; */
+  display: flex;
+  align-items: center;
+}
+.img-container img {
+  margin-right: 0.8rem;
+  border-radius: 2rem;
+  border: 2px solid #fe424d !important;
+}
+.btn-search {
+  background-color: #fe424d !important;
+  color: #fff !important;
+  border-radius: 25px !important;
+  padding: 0 1rem 0 1rem;
+}
+.btn-search i {
+  display: inline !important;
+  margin-right: 0.5rem;
+}
+.search-inp {
+  border-radius: 25px !important;
+  padding: 0 3rem 0 3rem !important;
+}

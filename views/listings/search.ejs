@@ -1,0 +1,28 @@
+<% layout ("/layouts/boilerplate") %>
+
+<div class="container-fluid offset-3">
+  <h1 class="mt-4 mb-4">Your Serach Listing</h1>
+  <a href="/listings/<%= itemFound._id %>" style="text-decoration: none">
+    <div class="card col-6">
+      <img
+        src="<%= itemFound.image.url %>"
+        class="card-img-top zoom-out"
+        alt="listing_image"
+        style="height: 20rem"
+      />
+
+      <!-- <div class="card-img-overlay"></div> -->
+      <div class="card-body">
+        <p class="card-text">
+          <b><%= itemFound.title %></b> <br />
+          <%= itemFound.price ? '₹ ' + itemFound.price.toLocaleString("en-IN") :
+          'Price not available' %>/ Night
+        </p>
+        <p class="card-text">
+          <b>Description: </b>
+          <%= itemFound.description %>
+        </p>
+      </div>
+    </div>
+  </a>
+</div>
