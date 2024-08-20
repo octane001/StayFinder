@@ -84,7 +84,7 @@ app.use((req, res, next) => {
 const Listing = require("./models/listing.js");
 
 // Search
-app;
+
 
 // New Update of Code By using express.router
 app.use("/listings", listingRouter);
