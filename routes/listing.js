@@ -17,7 +17,7 @@ const listingController = require("../controllers/listings.js");
 
 //Index Route // Create Route
 router
-  .route("/listings")
+  .route("/")
   .get(wrapAsync(listingController.index))
   .post(
     isLoggedIn,
